@@ -3,12 +3,18 @@
   "version": "0.1.0",
   "description": "Meguminn - A terminal-based AI programming assistant",
   "type": "module",
+  "files": [
+    "dist",
+    "README.md",
+    ".env.example"
+  ],
   "bin": {
     "meguminn": "dist/cli/index.js"
   },
   "scripts": {
     "dev": "tsx src/cli/index.ts",
     "build": "tsc",
+    "prepare": "tsc",
     "start": "node dist/cli/index.js",
     "test": "vitest run",
     "lint": "eslint .",
