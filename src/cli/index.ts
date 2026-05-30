@@ -8,6 +8,7 @@ import { chatCommand } from "./commands/chat.js";
 import { runCommand } from "./commands/run.js";
 import { editCommand } from "./commands/edit.js";
 import { reviewCommand } from "./commands/review.js";
+import { guiCommand } from "./commands/gui.js";
 
 const program = new Command();
 
@@ -23,5 +24,6 @@ program.addCommand(chatCommand);
 program.addCommand(runCommand);
 program.addCommand(editCommand);
 program.addCommand(reviewCommand);
+program.addCommand(guiCommand);
 
 program.parse();
